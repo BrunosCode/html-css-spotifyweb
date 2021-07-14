@@ -180,13 +180,24 @@ main {
     display: flex;
     background-color: #141922;
     flex-grow: 1;
-}
-.main__menu ul {
-    display: flex;
-    justify-content: center;
     }
-    .main_menu li {
-        margin-left: 1rem;
+    .main__menu {
+        display: inline-block;
+        width: 100%;
+        }
+        .main__menu ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 90px;
+        margin: 1rem;
+        text-transform: uppercase;
+        }
+        .main__menu li {
+            margin-left: 1rem;
+        }
+        .main__menu li:last-of-type {
+            margin-right: 1rem;
     }
 
 /* FOOTER  */
