@@ -6,11 +6,35 @@
 }
 
 /* COMMON  */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     height: 100vh;
     overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
+    color: white;
 }
+
+
+a {
+    text-decoration: none;
+    color: gray;
+    }
+    a:hover {
+        color: white;
+}
+
+button {
+    border: unset;
+    background-color: unset;
+    color: gray;
+    font-size: 1rem;
+    }
+    button:hover {
+        color: white;
+}
+
 
 ul {
     list-style: none;
@@ -49,10 +73,24 @@ header {
     left: 0;
     width: 230px;
     height: calc(100% - 90px);
+    overflow: hidden;
 
     background-color: black;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px 20px 0;
+    }
+    .sidebar__logo {
+        width: 125px;
+    }
+    .sidebar__icon {
+        width: 20px;
+        vertical-align: text-bottom;
+    }
+    .sidebar__playlist {
+        flex-grow: 1;
+        min-height: 100px;
+        overflow: scroll;
     }
