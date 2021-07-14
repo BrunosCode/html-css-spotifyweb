@@ -4,3 +4,34 @@
     padding: 0;
     margin: 0;
 }
+
+/* COMMON  */
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER  */
+header {
+    position: fixed;
+    z-index: 1;
+    height: 90px;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    .header__cta {
+        margin-right: 1.25rem;
+        padding: 1rem 2.5rem;
+        color: white;
+        background-color: unset;
+        border: solid white 1px;
+        border-radius: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+}
