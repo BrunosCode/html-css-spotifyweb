@@ -21,9 +21,9 @@
     <!-- /FIXED HEADER  -->
 
     <!-- SIDEBAR POSITION RELATIVE  -->
-    <aside class="sidebar sidebar--closed">
+    <aside class="sidebar ">
         <!-- LOGO MENU OPENED -->
-        <a href="#"><img src="img/logo.svg" alt="Spotify Logo" class="sidebar__logo"></a>
+        <a href="#"><img src="img/logo.svg" alt="Spotify Logo" class="sidebar__logo sidebar__item--hidable"></a>
         <!-- /LOGO MENU OPENED -->
         <!-- LOGO MENU CLOSED -->
         <a href="#"><img src="img/logo-small.svg" alt="Spotify Logo Icon" class="sidebar__icon sidebar__item--hidable-reverse"></a>
@@ -33,19 +33,19 @@
         <nav class="sidebar__menu">
             <ul>
                 <li>
-                    <a href="#" class="sidebar__link sidebar__link--active">
+                    <a href="#" class="sidebar__item--active">
                         <img src="img/home.svg" alt="Home Icon" class="sidebar__icon">
                         <span class="sidebar__item--hidable">Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="sidebar__link">
+                    <a href="#">
                         <img src="img/search.svg" alt="Search Icon" class="sidebar__icon">
                         <span class="sidebar__item--hidable">Cerca</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="sidebar__link">
+                    <a href="#">
                         <img src="img/libreria.svg" alt="Library Icon" class="sidebar__icon">
                         <span class="sidebar__item--hidable">La tua libreria</span>
                     </a>
@@ -55,12 +55,11 @@
         <!-- /SIDEBAR MENU WITH HIDABLE ITEMS -->
         
         <!-- PLAYLIST MENU HIDABLE  -->
-        <div class="sidebar__playlist sidebar__item--hidable">
-            <h3>Playlist</h3>
+        <div class="sidebar__playlist">
+            <h4 class="sidebar__item--hidable">Playlist</h4>
             
-            <button>Nome Crea Playlist</button>
-            
-            <ul>
+            <ul class="sidebar__item--hidable">
+                <li><button>Crea Playlist</button></li>
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
@@ -72,9 +71,15 @@
         </div>
         <!-- /PLAYLIST MENU HIDABLE  -->
         
-        <button class="sidebar__cta">Istalla app</button>
+        <button class="sidebar__cta">
+            <i class="fas fa-arrow-circle-down"></i>
+            <span class="sidebar__item--hidable">Installa app</span>
+        </button>
 
-        <a href="" class="sidebar__user">Bruno</a>
+        <a href="#" class="sidebar__profile">
+            <img src="img/profile.svg" alt="Profile Icon"> 
+            <span class="sidebar__item--hidable">Bruno</span>
+        </a>
     </aside>
     <!-- /SIDEBAR POSITION RELATIVE  -->
 

@@ -33,6 +33,7 @@ button {
     }
     button:hover {
         color: white;
+        cursor: pointer;
 }
 
 
@@ -74,23 +75,99 @@ header {
     width: 230px;
     height: calc(100% - 90px);
     overflow: hidden;
-
     background-color: black;
-
-    display: flex;
+    display: inline-flex;
+    vertical-align: text-top;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 20px 0;
+    padding: 1.25rem 1.25rem .5rem;
+    }
+    .sidebar li {
+        margin: .5rem 0;
     }
     .sidebar__logo {
         width: 125px;
     }
     .sidebar__icon {
-        width: 20px;
+        width: 1.5rem;
         vertical-align: text-bottom;
     }
+    .sidebar__menu {
+        margin: 1rem 0 0;
+    }
+    .sidebar__item--active {
+        color: white;
+        }
+        .sidebar__item--active::before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            left: -1.25rem;
+            height: 1.75rem;
+            border: solid 2px green;
+        }
     .sidebar__playlist {
         flex-grow: 1;
         min-height: 100px;
         overflow: scroll;
+        margin: 1rem 0 0;
+        }
+        .sidebar h4 {
+            text-transform: uppercase;
+        }
+        .sidebar__playlist button:before {
+            background-color: gray;
+            color: black;
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900; 
+            content: "\f067";
+            display: inline-block;
+            height: 2rem;
+            width: 2rem;
+            line-height: 2rem;
+            vertical-align: middle;
+            margin-right: .5rem;
     }
+    .sidebar__cta {
+        font-size: .875rem;
+        margin-top: .5rem;
+    }
+    .sidebar__profile {
+        margin-top: .5rem;
+        padding-top: .5rem;
+        border-top: solid gray 1px;
+        width: 100%;
+        color: white;
+        font-weight: 700;
+        line-height: 2rem;
+        }
+        .sidebar__profile img {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: gray;
+            border-radius: 50%;
+            vertical-align: text-bottom;
+    }
+    .sidebar span {
+        margin-left: .5rem;
+    }
+    /* STYLES REDUCING THE SIDEBAR  */
+    .sidebar.sidebar--closed {
+        width: unset;
+        padding: .5em;
+        align-items: center;
+    }
+    .sidebar--closed .sidebar__item--hidable {
+        display: none;
+        }
+        .sidebar--closed .sidebar__item--hidable-reverse {
+        display: inline-block;
+    }
+    .sidebar__item--hidable-reverse {
+        display: none;
+    }
+    .sidebar--closed .sidebar__profile {
+        border: unset;
+        width: unset;
+}
