@@ -239,7 +239,99 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #282828;
+    }
+    .currentSong {
+        width: 230px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .currentSong img {
+           width: 42px; 
+           height: 42px;
+        }
+        .currentSong__info {
+            width: 40%;
+            overflow: hidden;
+        }
+        .currentSong__info h6 {
+            color: gray;
+            font-weight: 500;
+        }
+        .currentSong__icons {
+            display: flex;
+            }
+            .currentSong__icons * {
+                margin: .5em;
+    }
+    .player {
+        flex-grow: 1;
+        padding: 1rem;
+        }
+        .player__buttons {
+            display: flex;
+            justify-content: center;
+            }
+            .player__buttons button {
+                color: white;
+                margin: 0 2rem;
+                font-size: 1.2rem;
+            }
+            .player__buttons button:hover {
+                transform: scale(1.2);
+            }
+            .player__button--bigger i {
+                font-size: 2rem;
+        }
+        .player__state {
+            display: flex;
+            justify-content: space-around;
+            margin-top: .5rem;
+        }
+        .player__bar {
+            width: 60%;
+            height: .3rem;
+            background-color: gray;
+            display: inline-block;
+            margin-top: .5rem;
+            border-radius: .5rem;
+            position: relative;
+            }
+        .player__innerBar {
+                content: "";
+                display: inline-block;
+                width: 60%;
+                background-color: white;
+                height: .3rem;
+                position: absolute;
+                border-radius: .5rem;
 }
+.option {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    }
+    .option__bar {
+        width: 60%;
+        height: .3rem;
+        background-color: gray;
+        display: inline-block;
+        border-radius: .5rem;
+        position: relative;
+        }
+    .option__innerBar {
+            content: "";
+            display: inline-block;
+            width: 60%;
+            background-color: white;
+            height: .3rem;
+            position: absolute;
+            border-radius: .5rem;
+}
+
 
 
 @media all and (max-width: 1100px) {
