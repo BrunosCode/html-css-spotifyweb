@@ -86,99 +86,99 @@ header {
     flex-direction: column;
     align-items: stretch;
     padding: 1.25rem 1.25rem .5rem;
-    }
-    .sidebar li {
-        margin: .5rem 0;
-    }
-    .sidebar__logo {
-        width: 125px;
-    }
-    .sidebar__icon {
-        width: 1.5rem;
-        vertical-align: text-bottom;
-    }
-    .sidebar__item--hidable-reverse {
-        display: none;
-    }
-    .sidebar__menu {
-        margin: 1rem 0 0;
-    }
-    .sidebar__item--active {
-        position: relative;
-        color: white;
-        }
-        .sidebar__item--active::before {
-            content: "";
-            position: absolute;
-            left: -1.25rem;
-            top: -.5rem;
-            height: 1.75rem;
-            border: solid 2px green;
-        }
-    .sidebar__playlist {
-        flex-grow: 1;
-        min-height: 100px;
-        overflow: scroll;
-        margin: 1rem 0 0;
-        }
-        .sidebar h4 {
-            text-transform: uppercase;
-        }
-        .sidebar__addPlaylist span {
-            background-color: gray;
-            color: black;
-            display: inline-block;
-            height: 2rem;
-            width: 2rem;
-            line-height: 2rem;
-            vertical-align: middle;
-            margin-right: .5rem;
-            position: relative;
-        }
-        .sidebar__addPlaylist span:before {
-            content: "";
-            height: 1rem;
-            width: .2rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: black;
-        }
-        .sidebar__addPlaylist span:after {
-            content: "";
-            height: .2rem;
-            width: 1rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: black;
-        }
-    .sidebar__cta {
-        font-size: .875rem;
-        margin-top: .5rem;
-        text-align: left;
-    }
-    .sidebar__profile {
-        margin-top: .5rem;
-        padding-top: .5rem;
-        border-top: solid gray 1px;
-        width: 100%;
-        color: white;
-        font-weight: 700;
-        line-height: 2rem;
-        }
-        .sidebar__profile img {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: gray;
-            border-radius: 50%;
-            vertical-align: text-bottom;
-        }
-        .sidebar__profile span {
-            margin-left: .5rem;
-    }
+}
+.sidebar li {
+    margin: .5rem 0;
+}
+.sidebar__logo {
+    width: 125px;
+}
+.sidebar__icon {
+    width: 1.5rem;
+    vertical-align: text-bottom;
+}
+.sidebar__item--hidable-reverse {
+    display: none;
+}
+.sidebar__menu {
+    margin: 1rem 0 0;
+}
+.sidebar__item--active {
+    position: relative;
+    color: white;
+}
+.sidebar__item--active::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    top: -.5rem;
+    height: 1.75rem;
+    border: solid 2px green;
+}
+.sidebar__playlist {
+    flex-grow: 1;
+    min-height: 100px;
+    overflow: scroll;
+    margin: 1rem 0 0;
+}
+.sidebar h4 {
+    text-transform: uppercase;
+}
+.sidebar__addPlaylist span {
+    background-color: gray;
+    color: black;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    margin-right: .5rem;
+    position: relative;
+}
+.sidebar__addPlaylist span:before {
+    content: "";
+    height: 1rem;
+    width: .2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+.sidebar__addPlaylist span:after {
+    content: "";
+    height: .2rem;
+    width: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+.sidebar__cta {
+    font-size: .875rem;
+    margin-top: .5rem;
+    text-align: left;
+}
+.sidebar__profile {
+    margin-top: .5rem;
+    padding-top: .5rem;
+    border-top: solid gray 1px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.sidebar__profile img {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: gray;
+    border-radius: 50%;
+    vertical-align: text-bottom;
+}
+.sidebar__profile span {
+    margin-left: .5rem;
+}
 
 /* MAIN CONTENT */
 main {
@@ -188,99 +188,99 @@ main {
     flex-grow: 1;
     overflow: scroll;
     }
-    .main__menu {
-        display: inline-block;
-        width: 100%;
-        }
-        .main__menu ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 1rem;
-        text-transform: uppercase;
-        }
-        .main__menu li {
-            margin: 1rem 1rem 2rem;
-            font-weight: 600;
-        }
-        .main__menu li:last-of-type {
-            margin-right: 1rem;
-        }
-        .main__menu--active {
-            color: white;
-            position: relative;
-            }
-            .main__menu--active::after {
-                content: "";
-                position: absolute;
-                border: solid 2px green;
-                width: 50%;
-                top: 1.5rem;
-                left: 25%;
-                text-align: center;
-    }
-    .main__block {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        }
-        .main__block > * {
-            margin-bottom: 1rem;
-        }
-        .main__block h6 {
-            color: gray;
-            font-weight: 500;
-        }
-        .main__collection {
-            display: flex;
-            justify-content: flex-start;
-            flex-grow: 0;
-            }
-            .main__item {
-                width: calc((100% / 6) - .5rem);
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                margin-right: .5rem;
-                margin-bottom: 1rem;
-                }
-                .main__item * {
-                    margin-bottom: .5rem;
-                }
-                .main__item h6 {
-                    color: gray;
-                    font-weight: 500;
-                }
-                .main__item div {
-                    position: relative;
-                    padding-top: 100%;
-                }
-                .main__item img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-                .main__item--rounded div {
-                    border-radius: 50%;
-                    overflow: hidden;
-                }
-                .main__item button {
-                    display: none;
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;       
-                    background-color: rgba(0, 0, 0, 0.5);
-                    font-size: 3rem;
-                    color: white;
-                }
-                .main__item:hover button {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+.main__menu {
+    display: inline-block;
+    width: 100%;
+}
+.main__menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+.main__menu li {
+    margin: 1rem 1rem 2rem;
+    font-weight: 600;
+}
+.main__menu li:last-of-type {
+    margin-right: 1rem;
+}
+.main__menu--active {
+    color: white;
+    position: relative;
+}
+.main__menu--active::after {
+    content: "";
+    position: absolute;
+    border: solid 2px green;
+    width: 50%;
+    top: 1.5rem;
+    left: 25%;
+    text-align: center;
+}
+.main__block {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.main__block > * {
+    margin-bottom: 1rem;
+}
+.main__block h6 {
+    color: gray;
+    font-weight: 500;
+}
+.main__collection {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+}
+.main__item {
+    width: calc((100% / 6) - .5rem);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: .5rem;
+    margin-bottom: 1rem;
+}
+.main__item * {
+    margin-bottom: .5rem;
+}
+.main__item h6 {
+    color: gray;
+    font-weight: 500;
+}
+.main__item div {
+    position: relative;
+    padding-top: 100%;
+}
+.main__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main__item--rounded div {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.main__item button {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;       
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    color: white;
+}
+.main__item:hover button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* FOOTER  */
 footer {
@@ -299,97 +299,96 @@ footer a {
 footer button:hover {
     transform: scale(1.2);
 }
-    .currentSong {
-        width: 230px;
-        padding: .5rem;
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        }
-        .currentSong img {
-           width: 42px; 
-           height: 42px;
-        }
-        .currentSong__info {
-            margin-left: 3%;
-            flex-grow: .5;
-        }
-        .currentSong__info h6 {
-            color: gray;
-            font-weight: 500;
-        }
-        .currentSong__icons {
-            display: flex;
-            width: 20%;
-            }
-            .currentSong__icons * {
-                margin: .2rem 20%;
-                
+.currentSong {
+    width: 230px;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.currentSong img {
+    width: 42px; 
+    height: 42px;
+}
+.currentSong__info {
+    margin-left: 3%;
+    flex-grow: .5;
+}
+.currentSong__info h6 {
+    color: gray;
+    font-weight: 500;
+}
+.currentSong__icons {
+    display: flex;
+    width: 20%;
+}
+.currentSong__icons * {
+    margin: .2rem 20%;          
+}
+.player {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 1rem .5rem;
+}
+.player__buttons {
+    display: flex;
+    justify-content: center;
+}
+.player__buttons button {
+    color: white;
+    margin: 0 5%;
+    font-size: 1.1rem;
+}
+.player__button--bigger i {
+    font-size: 1.7rem;
+}
+.player__state {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .5rem;
+}
+.player__bar {
+    width: 70%;
+    height: .3rem;
+    background-color: gray;
+    display: inline-block;
+    margin: .5rem 2%;
+    border-radius: .5rem;
+    position: relative;
+}
+.player__innerBar {
+    content: "";
+    display: inline-block;
+    width: 60%;
+    background-color: white;
+    height: .3rem;
+    position: absolute;
+    border-radius: .5rem;
+}
+.option {
+    width: 230px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
     }
-    .player {
-        flex-grow: 1;
-        flex-shrink: 1;
-        padding: 1rem .5rem;
-        }
-        .player__buttons {
-            display: flex;
-            justify-content: center;
-            }
-            .player__buttons button {
-                color: white;
-                margin: 0 5%;
-                font-size: 1.1rem;
-            }
-            .player__button--bigger i {
-                font-size: 1.7rem;
-        }
-        .player__state {
-            display: flex;
-            justify-content: space-around;
-            margin-top: .5rem;
-        }
-        .player__bar {
-            width: 70%;
-            height: .3rem;
-            background-color: gray;
-            display: inline-block;
-            margin: .5rem;
-            border-radius: .5rem;
-            position: relative;
-            }
-        .player__innerBar {
-                content: "";
-                display: inline-block;
-                width: 60%;
-                background-color: white;
-                height: .3rem;
-                position: absolute;
-                border-radius: .5rem;
+.option__bar {
+    width: 60%;
+    height: .3rem;
+    background-color: gray;
+    display: inline-block;
+    border-radius: .5rem;
+    position: relative;
     }
-    .option {
-        width: 230px;
-        display: flex;
-        flex-shrink: 0;
-        justify-content: space-between;
-        align-items: center;
-        padding: .5rem;
-        }
-        .option__bar {
-            width: 60%;
-            height: .3rem;
-            background-color: gray;
-            display: inline-block;
-            border-radius: .5rem;
-            position: relative;
-            }
-        .option__innerBar {
-                content: "";
-                display: inline-block;
-                width: 60%;
-                background-color: white;
-                height: .3rem;
-                position: absolute;
-                border-radius: .5rem;
+.option__innerBar {
+    content: "";
+    display: inline-block;
+    width: 60%;
+    background-color: white;
+    height: .3rem;
+    position: absolute;
+    border-radius: .5rem;
 }
 
 
@@ -397,10 +396,10 @@ footer button:hover {
 @media all and (max-width: 1100px) {
     .main__collection {
         flex-wrap: wrap;
-        }
-        .main__item {
-            width: calc(25% - .5rem);
-        }
+    }
+    .main__item {
+        width: calc(25% - .5rem);
+    }
 }
 
 
@@ -432,19 +431,19 @@ footer button:hover {
         min-width: 50px;
         padding: .5em;
         align-items: center;
+    }
+    .sidebar--closed:not(:hover) .sidebar__item--hidable {
+        display: none;
         }
-        .sidebar--closed:not(:hover) .sidebar__item--hidable {
-            display: none;
-            }
-            .sidebar--closed:not(:hover) .sidebar__item--hidable-reverse {
-            display: inline-block;
-        }
-        .sidebar--closed:not(:hover) .sidebar__item--active::before {
-            content: none;
-        }
-        .sidebar--closed:not(:hover) .sidebar__profile {
-            border: unset;
-            width: unset;
+        .sidebar--closed:not(:hover) .sidebar__item--hidable-reverse {
+        display: inline-block;
+    }
+    .sidebar--closed:not(:hover) .sidebar__item--active::before {
+        content: none;
+    }
+    .sidebar--closed:not(:hover) .sidebar__profile {
+        border: unset;
+        width: unset;
     }
 
     .player__buttons button {
