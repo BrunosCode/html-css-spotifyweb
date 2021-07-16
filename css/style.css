@@ -177,18 +177,16 @@ body {
     font-weight: 700;
     line-height: 2rem;
 }
-.sidebar__profile img {
+.sidebar__profileImg {
     width: 1.5rem;
     height: 1.5rem;
     background-color: gray;
     border-radius: 50%;
     vertical-align: text-bottom;
-}
-.sidebar__profile span {
-    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
-/* MAIN CONTENT */
+/* MAIN BLOCK */
 .main {
     height: 100%;
     padding: 90px .5rem 1rem 1.5rem;
@@ -196,7 +194,6 @@ body {
     flex-grow: 1;
     overflow-y: auto;
     }
-
 .mainNav {
     width: 100%;
     display: flex;
@@ -230,13 +227,14 @@ body {
     font-size: 1.75rem;
     font-weight: 800;
 }
-
 .main__collection {
     display: flex;
     justify-content: flex-start;
     flex-grow: 0;
     margin-bottom: 3rem;
 }
+
+/* ALBUM COMPONENT  */
 .album {
     width: calc((100% / 6) - 1rem);
     display: flex;
@@ -274,7 +272,7 @@ body {
     align-items: center;
 }
 
-/* FOOTER  */
+/* FOOTER BLOCK*/
 .footer {
     height: 90px;
     width: 100%;
@@ -284,12 +282,8 @@ body {
     position: relative;
     z-index: 3;
 }
-.footer .btn {
-    color: white;
-}
-.footer .btn:hover {
-    transform: scale(1.2);
-}
+
+/* CURRENT SONG COMPONTENT, FOOTER LEFT  */
 .currentSong {
     width: 230px;
     padding: .5rem;
@@ -314,6 +308,8 @@ body {
     width: 25%;
     height: 50%;
 }
+
+/* PLAYER COMPONENT, FOOTET CENTER  */
 .player {
     flex-grow: 1;
     flex-shrink: 1;
@@ -339,6 +335,8 @@ body {
     font-size: .75rem;
     font-weight: 500;
 }
+
+/* SOUND MENU COMPONENT, RIGHT FOOTER  */
 .option {
     width: 230px;
     display: flex;
@@ -352,6 +350,7 @@ body {
     margin: 0 2%;
 }
 
+/* PROGRESSION BAR COMPONENT  */
 .bar {
     width: 50%;
     height: .3rem;
@@ -386,16 +385,16 @@ body {
 }
 
 
-
-
 @media all and (max-width: 1100px) {
     .main__collection {
         flex-wrap: wrap;
     }
+
     .album {
         width: calc(25% - .5rem);
         margin-right: .5rem;
     }
+
     .player__btn {
         margin: 0 3%;
     }
@@ -407,9 +406,11 @@ body {
         width: calc(50% - .5rem);
         margin-right: .5rem;
     }
+
     .player {
         width: 40%;
     }
+
     .currentSong,  
     .option {
         width: 30%;
