@@ -15,10 +15,15 @@ body {
     color: white;
 }
 
+:root {
+    --green: #ADFF2F;
+    --darkGray: #717171;
+    --lightGray: #A3A3A3;
+  }
 
 .link {
     text-decoration: none;
-    color: gray;
+    color: var(--darkGray);
     display: block;
 }
 .link:hover {
@@ -45,7 +50,7 @@ body {
     font-weight: 600;
 }
 .subtitle {
-    color: gray;
+    color: var(--darkGray);
     font-weight: 500;
 }
 
@@ -106,9 +111,9 @@ body {
     content: "";
     position: absolute;
     left: -1.25rem;
-    top: -.5rem;
+    top: -.25rem;
     height: 1.75rem;
-    border: solid 2px green;
+    border: solid 2px var(--green);
 }
 .sidebar__item--hidable-reverse {
     display: none;
@@ -134,7 +139,7 @@ body {
     margin: 1rem 0 0;
 }
 .sidebar__addPlaylist {
-    background-color: gray;
+    background-color: var(--lightGray);
     color: black;
     display: inline-block;
     height: 2rem;
@@ -231,7 +236,7 @@ body {
 .mainNav__link--active::after {
     content: "";
     position: absolute;
-    border: solid 2px green;
+    border: solid 2px var(--green);
     width: 50%;
     top: 1.5rem;
     left: 25%;
@@ -356,7 +361,7 @@ body {
 .bar {
     width: 50%;
     height: .3rem;
-    background-color: gray;
+    background-color: var(--darkGray);
     margin: 0 2%;
     border-radius: .5rem;
     position: relative;
@@ -365,13 +370,13 @@ body {
     content: "";
     left: 0;
     width: 60%;
-    background-color: white;
+    background-color: var(--lightGray);
     height: 100%;
     position: absolute;
     border-radius: .5rem;
 }
 .bar:hover .innerBar{
-    background-color: greenyellow;
+    background-color: var(--green);
     cursor: pointer;
 }
 .bar:hover .innerBar::after {
@@ -382,7 +387,7 @@ body {
     height: .8rem;
     width: .8rem;
     border-radius: 50%;
-    background-color: greenyellow;
+    background-color: var(--green);
     position: absolute;
 }
 
