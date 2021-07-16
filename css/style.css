@@ -29,12 +29,11 @@ body {
 .btn {
     border: unset;
     background-color: unset;
-    color: gray;
     font-size: 1rem;
     }
 .btn:hover {
-    color: white;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 .title {
@@ -74,9 +73,6 @@ body {
     border-radius: 2.5rem;
     text-transform: uppercase;
     font-weight: 600;
-}
-.header__cta:hover {
-    transform: scale(1.1);
 }
 
 /* SIDEBAR  */
@@ -354,7 +350,6 @@ body {
     margin: 0 2%;
 }
 
-
 .bar {
     width: 50%;
     height: .3rem;
@@ -371,6 +366,21 @@ body {
     height: 100%;
     position: absolute;
     border-radius: .5rem;
+}
+.bar:hover .innerBar{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+.bar:hover .innerBar::after {
+    content: "";
+    display: block;
+    top: -.25rem;
+    right: 0;
+    height: .8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background-color: greenyellow;
+    position: absolute;
 }
 
 
