@@ -30,6 +30,7 @@ body {
     border: unset;
     background-color: unset;
     font-size: 1rem;
+    color: white;
     }
 .btn:hover {
     cursor: pointer;
@@ -189,17 +190,30 @@ body {
 /* MAIN BLOCK */
 .main {
     height: 100%;
-    padding: 90px .5rem 1rem 1.5rem;
+    padding: 90px 0 0;
     background-color: #141922;
     flex-grow: 1;
     overflow-y: auto;
-    }
+}
+.main__title {
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+.main__content {
+    padding-left: 1rem;
+}
+.main__collection {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+    margin-bottom: 3rem;
+}
+
 .mainNav {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1rem;
     text-transform: uppercase;
     list-style: none;
 }
@@ -222,16 +236,6 @@ body {
     top: 1.5rem;
     left: 25%;
     text-align: center;
-}
-.main__title {
-    font-size: 1.75rem;
-    font-weight: 800;
-}
-.main__collection {
-    display: flex;
-    justify-content: flex-start;
-    flex-grow: 0;
-    margin-bottom: 3rem;
 }
 
 /* ALBUM COMPONENT  */
@@ -319,9 +323,7 @@ body {
     text-align: center;
 }
 .player__btn {
-    color: white;
     margin: 0 2rem;
-    font-size: 1rem;
     vertical-align: middle;
 }
 .player__btn--bigger {
