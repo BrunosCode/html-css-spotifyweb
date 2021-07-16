@@ -33,6 +33,8 @@ body {
     }
 .btn:hover {
     cursor: pointer;
+}
+.btn--scale:hover {
     transform: scale(1.1);
 }
 
@@ -189,7 +191,7 @@ body {
 /* MAIN CONTENT */
 .main {
     height: 100%;
-    padding: 90px 1rem 1rem;
+    padding: 90px .5rem 1rem 1.5rem;
     background-color: #141922;
     flex-grow: 1;
     overflow-y: auto;
